@@ -28,6 +28,38 @@
   color: #61dafb;
 }
 
+.app-wrapper {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-areas: 
+  "h h"
+  "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
+}
+
+.header {
+  grid-area: h;
+  background-color: rgb(28, 204, 28);
+
+}
+.header img {
+  width: 46px;
+  border-radius: 50%;
+  align-items: center;
+  margin-top: 5px;
+}
+.nav {
+  grid-area: n;
+  background-color: rgb(191, 136, 35);
+}
+.content {
+  grid-area: c;
+  background-color: rgb(73, 73, 189);
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
