@@ -5,4 +5,10 @@
 
   .item {
       color: white;
+      cursor: pointer;
+  }
+
+  .active {
+    color: gold;
+
   }

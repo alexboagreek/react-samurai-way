@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className={classes.item}>
             <a>Company name</a>
         </div>
-        <div className={classes.item}>
+        <div className={`${classes.item} ${classes.active}`}>
             <a>Zombies</a>
         </div>
         <div className={classes.item}>
