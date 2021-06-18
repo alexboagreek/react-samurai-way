@@ -1,14 +1,15 @@
 import React from 'react';
 import classes from'./Navo.module.css';
-
+import {NavLink} from 'react-router-dom';
 
 const Navbar = () => {
-  return <nav className={classes.nav}>
+  return (
+      <nav className={classes.nav}>
         <div className={classes.item}>
-            <a href="/profile">Company name</a>
+            <NavLink to="/profile" activeClassName={classes.active}>Company name</NavLink>
         </div>
         <div className={`${classes.item} ${classes.active}`}>
-            <a href="/gialogs">Zombies</a>
+            <NavLink to="/gialogs" activeClassName={classes.active}>Zombies</NavLink>
         </div>
         <div className={classes.item}>
             <a>Weapons</a>
@@ -20,5 +21,6 @@ const Navbar = () => {
             <a>Settings</a>
         </div>
     </nav>
+  )
 }
 export default Navbar;
