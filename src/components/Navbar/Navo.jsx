@@ -5,10 +5,10 @@ import classes from'./Navo.module.css';
 const Navbar = () => {
   return <nav className={classes.nav}>
         <div className={classes.item}>
-            <a>Company name</a>
+            <a href="/profile">Company name</a>
         </div>
         <div className={`${classes.item} ${classes.active}`}>
-            <a>Zombies</a>
+            <a href="/gialogs">Zombies</a>
         </div>
         <div className={classes.item}>
             <a>Weapons</a>

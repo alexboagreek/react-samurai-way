@@ -39,6 +39,10 @@
   grid-template-columns: 2fr 10fr;
   /* grid-gap: 10px; */
 }
+.app-wrapper-content {
+  grid-area: c;
+  background-color: rgb(73, 73, 189);
+}
 
 @keyframes App-logo-spin {
   from {
